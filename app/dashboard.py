@@ -1,5 +1,6 @@
 import time
 import uuid
+import os
 import streamlit as st
 import requests
 import threading
@@ -33,7 +34,7 @@ except Exception:
         raise ImportError(f"Failed to import dashboard dependencies: {exc}") from exc
 
 
-API_BASE = "http://127.0.0.1:8000"
+API_BASE = os.getenv("API_BASE", "http://127.0.0.1:8000")
 
 st.set_page_config(layout="wide", page_title="AIDA News Dashboard")
 welcome_banner = st.empty()

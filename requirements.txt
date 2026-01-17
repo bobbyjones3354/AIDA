@@ -1,0 +1,13 @@
+altair
+fastapi
+groq
+newspaper3k
+pandas
+readability-lxml
+requests
+schedule
+sqlalchemy
+streamlit
+torch
+transformers
+uvicorn[standard]
